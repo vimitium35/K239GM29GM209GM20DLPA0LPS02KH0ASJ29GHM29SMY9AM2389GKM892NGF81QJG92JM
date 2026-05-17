@@ -305,15 +305,15 @@ CombatRageBot:AddDropdown('DamageIndicatorStyle', {
     Text = 'Style'
 })
 
-CombatRageBot:AddColorPicker('NormalDmgColor', {
+CombatRageBot:AddLabel('Normal Dmg Color'):AddColorPicker('NormalDmgColor', {
     Default = Color3.fromRGB(255, 255, 0),
-    Title = 'Normal Dmg Color',
+    Title = 'Normal Damage Color',
     Transparency = 0
 })
 
-CombatRageBot:AddColorPicker('BigDmgColor', {
+CombatRageBot:AddLabel('Big Dmg Color (≥30)'):AddColorPicker('BigDmgColor', {
     Default = Color3.fromRGB(255, 0, 0),
-    Title = 'Big Dmg Color (≥30)',
+    Title = 'Big Damage Color',
     Transparency = 0
 })
 
@@ -346,7 +346,7 @@ CombatRageBot:AddToggle('CustomCrosshair', {
     Default = false
 })
 
-CombatRageBot:AddColorPicker('CrosshairColor', {
+CombatRageBot:AddLabel('Color:'):AddColorPicker('CrosshairColor', {
     Default = Color3.fromRGB(255, 255, 255),
     Title = 'Crosshair Color',
     Transparency = 0
@@ -513,7 +513,7 @@ CombatKillEffects:AddDropdown('KillEffect', {
     Text = 'Kill Effect'
 })
 
-CombatKillEffects:AddColorPicker('KillEffectColor', {
+CombatKillEffects:AddLabel('Kill Effect Color'):AddColorPicker('KillEffectColor', {
     Default = Color3.fromRGB(255, 255, 255),
     Title = 'Kill Effect Color',
     Transparency = 0
@@ -745,7 +745,7 @@ VisualsESP:AddToggle('EnableChams', {
     Default = false
 })
 
-VisualsESP:AddColorPicker('ChamsVisibleColor', {
+VisualsESP:AddLabel('Chams Visible Color:'):AddColorPicker('ChamsVisibleColor', {
     Default = Color3.fromRGB(255, 0, 255),
     Title = 'Chams Visible Color',
     Transparency = 0
@@ -760,7 +760,7 @@ VisualsESP:AddSlider('ChamsVisibleTransparency', {
     Compact = false
 })
 
-VisualsESP:AddColorPicker('ChamsOccludedColor', {
+VisualsESP:AddLabel('Chams Occluded Color:'):AddColorPicker('ChamsOccludedColor', {
     Default = Color3.fromRGB(255, 0, 255),
     Title = 'Chams Occluded Color',
     Transparency = 0
@@ -925,21 +925,21 @@ VisualsESP:AddToggle('EnableLvlColor', {
     Default = false
 })
 
-VisualsESP:AddColorPicker('LevelBarColor', {
+VisualsESP:AddLabel('Level Bar'):AddColorPicker('LevelBarColor', {
     Default = Color3.fromRGB(255, 255, 255),
-    Title = 'Level Bar',
+    Title = 'Level Bar Color',
     Transparency = 0
 })
 
-VisualsESP:AddColorPicker('LevelBar2Color', {
+VisualsESP:AddLabel('Level Bar2'):AddColorPicker('LevelBar2Color', {
     Default = Color3.fromRGB(255, 255, 255),
-    Title = 'Level Bar2',
+    Title = 'Level Bar2 Color',
     Transparency = 0
 })
 
-VisualsESP:AddColorPicker('LevelBoxColor', {
+VisualsESP:AddLabel('Level Box'):AddColorPicker('LevelBoxColor', {
     Default = Color3.fromRGB(255, 255, 255),
-    Title = 'Level Box',
+    Title = 'Level Box Color',
     Transparency = 0
 })
 
@@ -953,7 +953,7 @@ VisualsESP:AddInput('XPText', {
     Placeholder = '0/1000 XP'
 })
 
-VisualsESP:AddColorPicker('XPTextColor', {
+VisualsESP:AddLabel('XP Text Color'):AddColorPicker('XPTextColor', {
     Default = Color3.fromRGB(255, 0, 0),
     Title = 'XP Text Color',
     Transparency = 0
@@ -983,7 +983,7 @@ VisualsESP:AddInput('LevelText', {
     Placeholder = ''
 })
 
-VisualsESP:AddColorPicker('LevelTextColor', {
+VisualsESP:AddLabel('Level Text Color'):AddColorPicker('LevelTextColor', {
     Default = Color3.fromRGB(255, 0, 0),
     Title = 'Level Text Color',
     Transparency = 0
@@ -1087,7 +1087,7 @@ VisualsCustomCursor:AddToggle('EnableCustomCursor', {
     Default = false
 })
 
-VisualsCustomCursor:AddColorPicker('CustomCursorColor', {
+VisualsCustomCursor:AddLabel('Color'):AddColorPicker('CustomCursorColor', {
     Default = Color3.fromRGB(255, 255, 0),
     Title = 'Cursor Color',
     Transparency = 0
@@ -1187,13 +1187,13 @@ WorldAtmosphere:AddSlider('AtmosphereOffset', {
     Compact = false
 })
 
-WorldAtmosphere:AddColorPicker('AtmosphereColor', {
+WorldAtmosphere:AddLabel('Color:'):AddColorPicker('AtmosphereColor', {
     Default = Color3.fromRGB(255, 255, 255),
     Title = 'Atmosphere Color',
     Transparency = 0
 })
 
-WorldAtmosphere:AddColorPicker('AtmosphereDecay', {
+WorldAtmosphere:AddLabel('Decay:'):AddColorPicker('AtmosphereDecay', {
     Default = Color3.fromRGB(255, 255, 255),
     Title = 'Atmosphere Decay',
     Transparency = 0
@@ -1320,15 +1320,15 @@ WorldLighting:AddToggle('EnableLighting', {
     Default = false
 })
 
-WorldLighting:AddColorPicker('LightingAmbient', {
+WorldLighting:AddLabel('Ambient:'):AddColorPicker('LightingAmbient', {
     Default = Color3.fromRGB(255, 255, 255),
-    Title = 'Ambient',
+    Title = 'Ambient Color',
     Transparency = 0
 })
 
-WorldLighting:AddColorPicker('LightingOutdoorAmbient', {
+WorldLighting:AddLabel('Outdoor Ambient:'):AddColorPicker('LightingOutdoorAmbient', {
     Default = Color3.fromRGB(255, 255, 255),
-    Title = 'Outdoor Ambient',
+    Title = 'Outdoor Ambient Color',
     Transparency = 0
 })
 
@@ -2530,13 +2530,13 @@ SettingsIntro:AddInput('CustomIntroName', {
     Placeholder = ''
 })
 
-SettingsIntro:AddColorPicker('GradientColor1', {
+SettingsIntro:AddLabel('Gradient Color 1:'):AddColorPicker('GradientColor1', {
     Default = Color3.fromRGB(255, 255, 255),
     Title = 'Gradient Color 1',
     Transparency = 0
 })
 
-SettingsIntro:AddColorPicker('GradientColor2', {
+SettingsIntro:AddLabel('Gradient Color 2:'):AddColorPicker('GradientColor2', {
     Default = Color3.fromRGB(100, 100, 255),
     Title = 'Gradient Color 2',
     Transparency = 0
